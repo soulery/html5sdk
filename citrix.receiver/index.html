@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Receiver - Citrix HTML5 Receiver SDK</title>
+  
+
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Receiver";
+    var mkdocs_page_input_path = "citrix.receiver.md";
+    var mkdocs_page_url = "/citrix.receiver/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+	<div class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+				<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+
+		</div>
+	</div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Index</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Receiver</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#namespace-receiver">Namespace: receiver</a></li>
+                
+                    <li><a class="toctree-l4" href="#receiver">receiver</a></li>
+                
+                    <li><a class="toctree-l4" href="#members">Members</a></li>
+                
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../global/">Global</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ReceiverError/">ReceiverError</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../session/">Session</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Receiver</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ajitchelat/AppDNA-SDK.git" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+             
+                <h1 id="namespace-receiver"><a class="toclink" href="#namespace-receiver">Namespace: receiver</a></h1>
+<hr />
+<h2 id="receiver"><a class="toclink" href="#receiver">receiver</a></h2>
+<p>citrix.receiver</p>
+<h2 id="members"><a class="toclink" href="#members">Members</a></h2>
+<p><span class="type-signature">(readonly) </span>apiVersion<span class="type-signature"></span> </p>
+<h3 id="properties"><a class="toclink" href="#properties">Properties:</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>apiVersion</code></td>
+<td><span class="param-type">String</span></td>
+<td>HTML5 receiver API version.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods"><a class="toclink" href="#methods">Methods</a></h2>
+<p><span class="type-signature">(static) </span>createSession<span class="signature">(id<span class="signature-attributes">opt</span>, connectionParams, onSessionCreated)</span><span class="type-signature"></span></p>
+<p>Creates a new session and returns session instance through callback. Use session instance to start the session, register and handle events and to disconnect the session.</p>
+<h4 id="parameters"><a class="toclink" href="#parameters">Parameters:</a></h4>
+<p><table class=params><thead><tr><th>Name<th>Type<th>Attributes<th class=last>Description<tbody><tr><td class=name><code>id</code><td class=type><span class=param-type>string</span><td class=attributes>&lt;optional&gt;<br><td class="last description">ID that is assigned when the session is created.<tr><td class=name><code>connectionParams</code><td class=type><span class=param-type><a href=/global#connectionParams>connectionParams</a></span><td class=attributes><td class="last description">Configuration options to create the session.<tr><td class=name><code>onSessionCreated</code><td class=type><span class=param-type><a href=/global#onSessionCreated>onSessionCreated</a></span><td class=attributes><td class="last description">Callback containing the session object created.<br><br>Signature sample below:<br>function &lt;function_name&gt;(session_object){…}</table></p>
+<h4 id="throws"><a class="toclink" href="#throws">Throws:</a></h4>
+<p>Unable to create session object.</p>
+<p>Type <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-type"><a href="../ReceiverError">ReceiverError</a></span></p>
+<h4 id="example"><a class="toclink" href="#example">Example</a></h4>
+<div class="codehilite"><pre><span class="nx">Following</span> <span class="nx">code</span> <span class="nx">launches</span> <span class="nx">an</span> <span class="nx">app</span><span class="o">/</span><span class="nx">desktop</span> <span class="k">in</span> <span class="nx">an</span> <span class="nx">iframe</span><span class="p">.</span> <span class="nx">Setting</span> <span class="nx">preferences</span> <span class="nx">to</span> <span class="nx">hide</span> <span class="nx">the</span> <span class="k">in</span><span class="o">-</span><span class="nx">session</span> <span class="nx">toolbar</span><span class="p">.</span>
+
+<span class="k">try</span><span class="p">{</span>
+    <span class="nx">citrix</span><span class="p">.</span><span class="nx">receiver</span><span class="p">.</span><span class="nx">setPath</span><span class="p">(</span><span class="s2">&quot;http://html5client_hosted_url/&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">id</span> <span class="o">=</span> <span class="s2">&quot;session1&quot;</span><span class="p">;</span> <span class="c1">//Optional parameter</span>
+    <span class="kd">var</span> <span class="nx">connectionParams</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;launchType&quot;</span> <span class="o">:</span> <span class="s2">&quot;embed&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;container&quot;</span> <span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;iframe&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;value&quot;</span> <span class="o">:</span> <span class="s2">&quot;sessionIframe&quot;</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;preferences&quot;</span> <span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;ui&quot;</span> <span class="o">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;toolbar&quot;</span> <span class="o">:</span> <span class="p">{</span>
+                        <span class="s2">&quot;menubar&quot;</span> <span class="o">:</span> <span class="kc">false</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+
+    <span class="kd">function</span> <span class="nx">sessionCreated</span><span class="p">(</span><span class="nx">sessionObject</span><span class="p">){</span>
+        <span class="c1">//Handle session interactions like events, start, disconnect here.              </span>
+        <span class="c1">// Adding onConnection event handler</span>
+        <span class="kd">function</span> <span class="nx">connectionHandler</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Event Received : &quot;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">type</span><span class="p">);</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>        
+        <span class="p">}</span>               
+        <span class="nx">sessionObject</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;onConnection&quot;</span><span class="p">,</span><span class="nx">connectionHandler</span><span class="p">);</span>
+
+        <span class="c1">// Adding onConnectionClosed event handler</span>
+        <span class="kd">function</span> <span class="nx">connectionClosedHandler</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Event Received : &quot;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">type</span><span class="p">);</span>      
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>        
+        <span class="p">}</span>
+        <span class="nx">sessionObject</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;onConnectionClosed&quot;</span><span class="p">,</span><span class="nx">connectionClosedHandler</span><span class="p">);</span>
+
+        <span class="c1">// Adding onError event handler</span>
+        <span class="kd">function</span> <span class="nx">onErrorHandler</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Event Received : &quot;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">type</span><span class="p">);</span>      
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">sessionObject</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;onError&quot;</span><span class="p">,</span><span class="nx">onErrorHandler</span><span class="p">);</span>
+
+        <span class="c1">//Adding onURLRedirection event handler</span>
+        <span class="kd">function</span> <span class="nx">onURLRedirectionHandler</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Event Received : &quot;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">type</span><span class="p">);</span>      
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">sessionObject</span><span class="p">.</span><span class="nx">addListener</span><span class="p">(</span><span class="s2">&quot;onURLRedirection&quot;</span><span class="p">,</span><span class="nx">onURLRedirectionHandler</span><span class="p">);</span>
+
+        <span class="c1">//ICADATA has been constructed for example. Recommending to use StoreFront/WebInterface SDK to get ICA. </span>
+        <span class="c1">//Refer session.start() for more details.</span>
+        <span class="kd">var</span> <span class="nx">icaData</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Domain&quot;</span><span class="o">:</span><span class="s2">&quot;abcd&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;ClearPassword&quot;</span><span class="o">:</span><span class="s2">&quot;xxxxxxxxx&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;InitialProgram&quot;</span><span class="o">:</span><span class="s2">&quot;#Desktop&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Title&quot;</span><span class="o">:</span><span class="s2">&quot;Desktop&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Address&quot;</span><span class="o">:</span><span class="s2">&quot;xx.xx.xx.xx&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Username&quot;</span><span class="o">:</span><span class="s2">&quot;xyz&quot;</span>                
+        <span class="p">};</span>
+        <span class="kd">var</span> <span class="nx">launchData</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span> <span class="o">:</span><span class="s2">&quot;json&quot;</span><span class="p">,</span><span class="nx">value</span> <span class="o">:</span><span class="nx">icaData</span><span class="p">};</span>   
+        <span class="nx">sessionObject</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="nx">launchData</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">citrix</span><span class="p">.</span><span class="nx">receiver</span><span class="p">.</span><span class="nx">createSession</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span><span class="nx">connectionParams</span><span class="p">,</span><span class="nx">sessionCreated</span><span class="p">);</span>
+<span class="p">}</span><span class="k">catch</span><span class="p">(</span><span class="nx">ex</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">ex</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p><span class="type-signature">(static) </span>setPath<span class="signature">(path)</span><span class="type-signature"></span> {#.setPath .name}</p>
+<p>Sets the HTML5Engine Path. Must be set before creating a session.</p>
+<h4 id="parameters_1"><a class="toclink" href="#parameters_1">Parameters:</a></h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td><span class="param-type">string</span></td>
+<td>Path of HTML5Client folder.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="throws_1"><a class="toclink" href="#throws_1">Throws:</a></h4>
+<div class="codehilite"><pre>Path is empty.
+</pre></div>
+
+
+<p>Type <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-type"><a href="../ReceiverError">ReceiverError</a></span></p>
+<p><span class="type-signature">(static) </span>viewLog<span class="signature">()</span><span class="type-signature"></span> {#.viewLog .name}</p>
+<p>Opens the logging page in a new tab.HTML5Engine Path should be set
+before calling this API.</p>
+<h4 id="throws_2"><a class="toclink" href="#throws_2">Throws:</a></h4>
+<p>HTML5 Engine Path is not set.</p>
+<p>Type<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="param-type"><a href="../ReceiverError">ReceiverError</a></span></p>
+              
+               
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ajitchelat/AppDNA-SDK.git" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span class="prev"><a href=".."><i class="fa fa-angle-left"></i> Previous</a></span>
+      
+      
+        <span class="next"><a href="../global/">Next <i class="fa fa-angle-right"></i></a></span>
+      
+    </span>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
+
+</body>
+</html>
