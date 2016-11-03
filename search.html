@@ -22,17 +22,13 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
   <link rel="stylesheet" href="./css/override.css" type="text/css" />
 
   
-  <script>
-    // Current page data
-    var mkdocs_page_name = "None";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = "/";
-  </script>
-  
   <script src="./js/jquery-2.1.1.min.js"></script>
   <script src="./js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="./js/highlight.pack.js"></script>
-  <script src="./js/theme.js"></script> 
+  <script src="./js/theme.js"></script>
+  <script>var base_url = '.';</script>
+  <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+
 
   
 </head>
@@ -74,19 +70,8 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
         <ul class="current">
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href=".">Index</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#hdx-sdk-for-html5">HDX SDK for HTML5</a></li>
-                
-                    <li><a class="toctree-l4" href="#introduction">Introduction</a></li>
-                
-                    <li><a class="toctree-l4" href="#getting-started">Getting Started</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href=".">Index</a>
         
     </li>
 <li>
@@ -136,9 +121,7 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
   <ul class="wy-breadcrumbs">
     <li><a href=".">Docs</a> &raquo;</li>
     
-      
     
-    <li>Index</li>
     <li class="wy-breadcrumbs-aside">
       
         
@@ -152,29 +135,19 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
           <div role="main">
             <div class="section">
              
-                <h2 id="hdx-sdk-for-html5"><a class="toclink" href="#hdx-sdk-for-html5">HDX SDK for HTML5</a></h2>
-<h4 id="introduction"><a class="toclink" href="#introduction">Introduction</a></h4>
-<p>Citrix Receiver for HTML5 enhances support for HDX and SDK sessions by
-enabling you to customize your delivery model for Citrix hosted apps and
-desktops through your website. This feature is particularly useful for
-building a rich app experience in your Enterprise portals. It can be
-used to provide a rich app experience for users as a service when
-hosting Citrix Receiver for HTML5 on your web server while launching
-Citrix hosted apps and desktops from your website.</p>
-<h4 id="getting-started"><a class="toclink" href="#getting-started">Getting Started</a></h4>
-<ol>
-<li>Copy CitrixHTML5SDK.js, HDXLauncher.js, HDXEngine.html files to the
-    same folder as the parent HTML page.</li>
-<li>Include CitrixHTML5SDK.js in parent HTML page.</li>
-<li>Set the full path of HTML5 Client.</li>
-<li>Set the connection parameters for launching the session.</li>
-<li>Attach the events if required.</li>
-<li>Start the session by passing ICA.You can refer to <a href="https://www.citrix.com/downloads/storefront-web-interface/sdks/storefront-services-api-30.html">StoreFront Web
-    APIs</a>
-    to fetch ICA.</li>
-</ol>
-<p>Click <a href="./citrix.receiver">here</a> to access full API documentation.</p>
-              
+
+  <h1 id="search">Search Results</h1>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus>
+  </form>
+
+  <div id="mkdocs-search-results">
+    Sorry, page not found.
+  </div>
+
+
                
             </div>
           </div>
@@ -193,8 +166,6 @@ Citrix hosted apps and desktops from your website.</p>
       
       
       
-        <span class="next"><a href="citrix.receiver/">Next <i class="fa fa-angle-right"></i></a></span>
-      
     </span>
 	<div class="footer-right">
 		<ul class="social-links">
@@ -209,8 +180,3 @@ Citrix hosted apps and desktops from your website.</p>
 
 </body>
 </html>
-
-<!--
-MkDocs version : 0.15.3
-Build Date UTC : 2016-11-03 04:29:08.145000
--->
